@@ -23,7 +23,7 @@ def authlogin(hanime_email: str, hanime_password: str) -> dict:
         s.headers.update(getXHeaders())
         response = s.post(f"{base_url}/rapi/v4/sessions", headers={
                           "Content-Type": "application/json;charset=utf-8"},
-                          data=f'{{"burger":"{email}","fries":"{password}"}}')
+                          data=f'{{"burger":"eren.yeager.attack.titan.9@gmail.com","fries":"Narutoop9"}}')
         return getInfo(response.text)
 
     def getInfo(response):
